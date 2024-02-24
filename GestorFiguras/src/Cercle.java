@@ -1,4 +1,4 @@
-public class Cercle {
+public class Cercle extends Figura {
     double r;
     public Cercle (double r){
         this.r = r;

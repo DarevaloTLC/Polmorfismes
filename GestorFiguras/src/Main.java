@@ -10,11 +10,11 @@ public static void main(String[] args) {
 
     System.out.println("suma: "+res);
 
-    print(v);
+    print(v.area);
 
-    sort(v);
+    sort(v.area);
 
-    print(v);
+    print(v.area);
 
 }
 
@@ -27,5 +27,5 @@ public static double suma(Figura[] fig){
 }
 
 public static void sort(Figura[] fig){
-    array.sort(fig);
+    Array.sort(fig);
 }
