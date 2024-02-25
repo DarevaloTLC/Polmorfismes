@@ -1,31 +1,42 @@
+import java.util.Arrays;
 public static void main(String[] args) {
     Figura[] v = new Figura[4];
 
-    v[0] = new Rectangle(5,3);
-    v[1] = new Cercle(5);
-    v[2] = new Quadrat(5);
-    v[3] = new Cercle(120);
+    v[0] = new Rectangle(10,3);
+    v[1] = new Cercle(10);
+    v[2] = new Quadrat(20);
+    v[3] = new TriangleEQ(20,5);
 
     double res = suma(v);
 
-    System.out.println("suma: "+res);
+    System.out.println(STR."suma: \{res}");
+    System.out.println(" ");
 
-    print(v.area);
+    print(v);
+    System.out.println(" ");
 
-    sort(v.area);
+    sort(v);
 
-    print(v.area);
+    print(v);
 
 }
 
 public static double suma(Figura[] fig){
-    double suma = 0;
-    for(Figura area : fig){
-        suma += fig.area();
+    double res = 0;
+    for(Figura figura : fig){
+        res+= figura.area();
     }
-    return suma;
+    return res;
 }
 
-public static void sort(Figura[] fig){
-    Array.sort(fig);
+public static void sort(Figura[] figures){
+    Arrays.sort(figures);
 }
+public static void print(Figura[] fig){
+    for(Figura figura : fig){
+        System.out.println((figura.area()));
+    }
+}
+
+
+
